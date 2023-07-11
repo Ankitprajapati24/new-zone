@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1e1e1e;
+}
+
+.circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    border-radius: 50%;
+    transition: all 3s;
+}
+
+.img {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    margin-top: 5px;
+    margin-left: 5px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+
+/* .circle {
+    
+} */
+
+.circle:hover {
+    box-shadow: 0 0 0 40px rgba(207, 97, 7, 0.678), 0 0 0 80px rgba(255, 102, 0, 0.678), 0 0 0 120px rgba(232, 235, 243, 0.383), 0 0 0 160px rgba(215, 224, 235, 0.383), 0 0 0 200px rgba(45, 255, 38, 0.157), 0 0 0 240px rgba(45, 255, 38, 0.198);
+}
